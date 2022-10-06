@@ -15,10 +15,10 @@ def handle_messages(messages):
 			   bot.send_message(chatid, "Nosotros somos una empresa comprometida con nuestros cliente ")
 			elif text == 'Productos':
 				bot.send_message(chatid, "Estos son los productos que tenemos para ti: ")
-				bot.send_photo(chatid, photo=open('TU-DIRECTORIO-DONDE-SE-ENCUENTRA-ALGUNA-IMAGEN', 'rb'))
+				bot.send_photo(chatid, photo=open('C:\Users\victor.arcel\Pictures', 'rb'))
 			elif text == 'Catalogo':
 				bot.send_message(chatid, "Claro te enviamos nuestro catalogo")
-				bot.send_document(chatid,open('TU-DIRECTORIO-DONDE-SE-ENCUENTRA-ALGUN-ARCHIVO', 'rb'))
+				bot.send_document(chatid,open('C:\Users\victor.arcel\Pictures', 'rb'))
 
 bot.set_update_listener(handle_messages) 
 bot.infinity_polling()
